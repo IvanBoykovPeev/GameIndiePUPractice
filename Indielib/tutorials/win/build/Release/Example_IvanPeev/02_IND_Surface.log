@@ -1,0 +1,10 @@
+﻿  StartApp.cpp
+..\..\..\basic\02_IND_Surface\StartApp.cpp(95): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+..\..\..\basic\02_IND_Surface\StartApp.cpp(97): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+..\..\..\basic\02_IND_Surface\StartApp.cpp(99): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Generating code
+  1 of 30 functions ( 3.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    2 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  02_IND_Surface.vcxproj -> C:\Users\blade\Source\Repos\C-game-course\Indielib\tutorials\win\basic\02_IND_Surface\/../../../../bin/win\Example_IvanPeev.exe

@@ -1,0 +1,1175 @@
+
+                         ''~``                          
+                        ( o o )                         
++------------------.oooO--(_)--Oooo.------------------+ 
+|                                                     | 
+|                .-------------------.                | 
+|                | I N D I E  L I B  |                | 
+|                .-------------------.                | 
+|                    .oooO                            | 
+|                    (   )   Oooo.                    | 
++---------------------\ (----(   )--------------------+
+                       \_)    ) /                      
+                             (_/                        
+Indielib version: 0.5.1
+
+[Init time]: (Friday, 31 of March 2017)
+
+[02:07:43] [ BEGIN ] -- Creating Render --
+                     {
+[02:07:43] [ BEGIN ]    -- Creating SDL window --
+                        {
+           [  OK   ]       Window created
+           [ INFO  ]       Mode: Window
+                        }
+[02:07:43] [  END  ]    Window OK [Elapsed time = 0.015 seg]
+[02:07:43] [ BEGIN ]    -- Initializing Direct3D --
+                        {
+           [  OK   ]       Creating D3D object
+           [  OK   ]       Obtaining the adapter
+           [  OK   ]       Creating the device (D3DCREATE_HARDWARE_VERTEXPROCESSING)
+           [ INFO  ]       Video mode: 800 x 600 x 32
+                        }
+[02:07:43] [  END  ]    Direct3D OK [Elapsed time = 0.121 seg]
+[02:07:43] [ BEGIN ]    -- Hardware information --
+                        {
+           [ INFO  ]       Direct3D version: DXSDK November 2007
+           [ INFO  ]       Mark: ATI Technologies Inc
+           [ INFO  ]       Chip: AMD Radeon HD 7520G
+           [ INFO  ]       Primitive antialising (D3DRS_ANTIALIASEDLINEENABLE): No
+           [ INFO  ]       Maximum texture size: 16384 x 16384
+           [ INFO  ]       Vertex Shader: 3 . 0 
+           [ INFO  ]       Pixel Shader: 3 . 0
+                        }
+[02:07:43] [  END  ]    Hardware Ok [Elapsed time = 0.001 seg]
+[02:07:43] [ BEGIN ]    -- Initializing ImageManager --
+                        {
+           [  OK   ]       Preparing ImageManager
+           [ INFO  ]       Using FreeImage version:  3.15.3
+           [ INFO  ]       Copyright:  This program uses FreeImage, a free, open source image library supporting all common bitmap formats. See http://freeimage.sourceforge.net for details
+                        }
+[02:07:43] [  END  ]    ImageManager Initialised [Elapsed time = 0 seg]
+[02:07:43] [ BEGIN ]    -- Initializing SurfaceManager --
+                        {
+           [  OK   ]       Checking IND_Render
+           [  OK   ]       Checking IND_ImageManager
+                        }
+[02:07:43] [  END  ]    SurfaceManager OK [Elapsed time = 0 seg]
+[02:07:43] [ BEGIN ]    -- Initializing AnimationManager --
+                        {
+           [  OK   ]       SurfaceManager Ok
+           [  OK   ]       ImageManager Ok
+                        }
+[02:07:43] [  END  ]    AnimationManager OK [Elapsed time = 0 seg]
+[02:07:43] [ BEGIN ]    -- Initializing FontManager --
+                        {
+           [  OK   ]       SurfaceManager Ok
+           [  OK   ]       ImageManager Ok
+                        }
+[02:07:43] [  END  ]    FontManager OK [Elapsed time = 0 seg]
+[02:07:43] [ BEGIN ]    -- Initializing Entity2dManager --
+                        {
+           [  OK   ]       Preparing Entity2dManager
+           [  OK   ]        Checking IND_Render
+                        }
+[02:07:43] [  END  ]    Entity2dManager OK [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Loading Image --
+                        {
+           [ INFO  ]       File name: ../../resources/cherry_blossom_background.png
+           [ INFO  ]       Extension: png
+           [ INFO  ]       Size: 800 x 600
+           [ INFO  ]       Bpp: 4
+           [ INFO  ]       Format: IND_RGBA
+                        }
+[02:07:44] [  END  ]    Image loaded [Elapsed time = 0.026 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/cherry_blossom_background.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 800 x 600
+           [ INFO  ]       Block size: 1024 x 1024
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 224 x 424
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0.01 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/cherry_blossom_background.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]    -- Loading Image --
+                        {
+           [ INFO  ]       File name: ../../resources/star.png
+           [ INFO  ]       Extension: png
+           [ INFO  ]       Size: 86 x 83
+           [ INFO  ]       Bpp: 4
+           [ INFO  ]       Format: IND_RGBA
+                        }
+[02:07:44] [  END  ]    Image loaded [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/star.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 86 x 83
+           [ INFO  ]       Block size: 128 x 128
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 42 x 45
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/star.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Parsing and loading animation --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/character1.xml
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/advance/Rock_Avanza_01.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 116 x 198
+           [ INFO  ]          Bpp: 1
+           [ INFO  ]          Format: IND_COLOUR_INDEX
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/advance/Rock_Avanza_02.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 114 x 200
+           [ INFO  ]          Bpp: 1
+           [ INFO  ]          Format: IND_COLOUR_INDEX
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/advance/Rock_Avanza_03.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 110 x 202
+           [ INFO  ]          Bpp: 1
+           [ INFO  ]          Format: IND_COLOUR_INDEX
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/advance/Rock_Avanza_04.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 106 x 200
+           [ INFO  ]          Bpp: 1
+           [ INFO  ]          Format: IND_COLOUR_INDEX
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/advance/Rock_Avanza_05.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 106 x 200
+           [ INFO  ]          Bpp: 1
+           [ INFO  ]          Format: IND_COLOUR_INDEX
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/advance/Rock_Avanza_06.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 106 x 202
+           [ INFO  ]          Bpp: 1
+           [ INFO  ]          Format: IND_COLOUR_INDEX
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/advance/Rock_Avanza_07.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 106 x 204
+           [ INFO  ]          Bpp: 1
+           [ INFO  ]          Format: IND_COLOUR_INDEX
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/advance/Rock_Avanza_08.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 106 x 202
+           [ INFO  ]          Bpp: 1
+           [ INFO  ]          Format: IND_COLOUR_INDEX
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/advance/Rock_Avanza_09.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 102 x 198
+           [ INFO  ]          Bpp: 1
+           [ INFO  ]          Format: IND_COLOUR_INDEX
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/advance/Rock_Avanza_10.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 102 x 196
+           [ INFO  ]          Bpp: 1
+           [ INFO  ]          Format: IND_COLOUR_INDEX
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0 seg]
+                        }
+[02:07:44] [  END  ]    Animation parsed and loaded [Elapsed time = 0.006 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/advance/Rock_Avanza_01.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 116 x 198
+           [ INFO  ]       Block size: 128 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 12 x 58
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/advance/Rock_Avanza_01.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/advance/Rock_Avanza_02.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 114 x 200
+           [ INFO  ]       Block size: 128 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 14 x 56
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/advance/Rock_Avanza_02.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/advance/Rock_Avanza_03.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 110 x 202
+           [ INFO  ]       Block size: 128 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 18 x 54
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/advance/Rock_Avanza_03.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/advance/Rock_Avanza_04.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 106 x 200
+           [ INFO  ]       Block size: 128 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 22 x 56
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/advance/Rock_Avanza_04.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/advance/Rock_Avanza_05.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 106 x 200
+           [ INFO  ]       Block size: 128 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 22 x 56
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/advance/Rock_Avanza_05.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/advance/Rock_Avanza_06.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 106 x 202
+           [ INFO  ]       Block size: 128 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 22 x 54
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/advance/Rock_Avanza_06.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/advance/Rock_Avanza_07.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 106 x 204
+           [ INFO  ]       Block size: 128 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 22 x 52
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/advance/Rock_Avanza_07.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/advance/Rock_Avanza_08.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 106 x 202
+           [ INFO  ]       Block size: 128 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 22 x 54
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/advance/Rock_Avanza_08.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/advance/Rock_Avanza_09.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 102 x 198
+           [ INFO  ]       Block size: 128 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 26 x 58
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/advance/Rock_Avanza_09.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/advance/Rock_Avanza_10.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 102 x 196
+           [ INFO  ]       Block size: 128 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 26 x 60
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/advance/Rock_Avanza_10.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Parsing and loading animation --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/character2.xml
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/stop/Terry_Parado_01.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 148 x 194
+           [ INFO  ]          Bpp: 1
+           [ INFO  ]          Format: IND_COLOUR_INDEX
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/stop/Terry_Parado_02.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 148 x 192
+           [ INFO  ]          Bpp: 1
+           [ INFO  ]          Format: IND_COLOUR_INDEX
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/stop/Terry_Parado_03.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 148 x 188
+           [ INFO  ]          Bpp: 1
+           [ INFO  ]          Format: IND_COLOUR_INDEX
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/stop/Terry_Parado_04.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 150 x 186
+           [ INFO  ]          Bpp: 1
+           [ INFO  ]          Format: IND_COLOUR_INDEX
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/stop/Terry_Parado_05.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 150 x 188
+           [ INFO  ]          Bpp: 1
+           [ INFO  ]          Format: IND_COLOUR_INDEX
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/stop/Terry_Parado_06.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 150 x 192
+           [ INFO  ]          Bpp: 1
+           [ INFO  ]          Format: IND_COLOUR_INDEX
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/stop/Terry_Parado_07.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 148 x 194
+           [ INFO  ]          Bpp: 1
+           [ INFO  ]          Format: IND_COLOUR_INDEX
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/stop/Terry_Parado_08.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 148 x 194
+           [ INFO  ]          Bpp: 1
+           [ INFO  ]          Format: IND_COLOUR_INDEX
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/stop/Terry_Parado_09.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 148 x 192
+           [ INFO  ]          Bpp: 1
+           [ INFO  ]          Format: IND_COLOUR_INDEX
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0.001 seg]
+                        }
+[02:07:44] [  END  ]    Animation parsed and loaded [Elapsed time = 0.007 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/stop/Terry_Parado_01.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 148 x 194
+           [ INFO  ]       Block size: 256 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 108 x 62
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/stop/Terry_Parado_01.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/stop/Terry_Parado_02.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 148 x 192
+           [ INFO  ]       Block size: 256 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 108 x 64
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/stop/Terry_Parado_02.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/stop/Terry_Parado_03.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 148 x 188
+           [ INFO  ]       Block size: 256 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 108 x 68
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/stop/Terry_Parado_03.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/stop/Terry_Parado_04.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 150 x 186
+           [ INFO  ]       Block size: 256 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 106 x 70
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/stop/Terry_Parado_04.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/stop/Terry_Parado_05.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 150 x 188
+           [ INFO  ]       Block size: 256 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 106 x 68
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/stop/Terry_Parado_05.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/stop/Terry_Parado_06.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 150 x 192
+           [ INFO  ]       Block size: 256 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 106 x 64
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/stop/Terry_Parado_06.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/stop/Terry_Parado_07.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 148 x 194
+           [ INFO  ]       Block size: 256 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 108 x 62
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/stop/Terry_Parado_07.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/stop/Terry_Parado_08.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 148 x 194
+           [ INFO  ]       Block size: 256 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 108 x 62
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/stop/Terry_Parado_08.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/stop/Terry_Parado_09.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 148 x 192
+           [ INFO  ]       Block size: 256 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 108 x 64
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/stop/Terry_Parado_09.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Parsing and loading animation --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/dust.xml
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/dust/kof2k-teleportdust01.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 96 x 138
+           [ INFO  ]          Bpp: 3
+           [ INFO  ]          Format: IND_RGB
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/dust/kof2k-teleportdust02.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 96 x 138
+           [ INFO  ]          Bpp: 3
+           [ INFO  ]          Format: IND_RGB
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/dust/kof2k-teleportdust03.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 96 x 138
+           [ INFO  ]          Bpp: 3
+           [ INFO  ]          Format: IND_RGB
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/dust/kof2k-teleportdust04.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 96 x 138
+           [ INFO  ]          Bpp: 3
+           [ INFO  ]          Format: IND_RGB
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/dust/kof2k-teleportdust05.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 96 x 138
+           [ INFO  ]          Bpp: 3
+           [ INFO  ]          Format: IND_RGB
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/dust/kof2k-teleportdust06.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 96 x 138
+           [ INFO  ]          Bpp: 3
+           [ INFO  ]          Format: IND_RGB
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/dust/kof2k-teleportdust06.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 96 x 138
+           [ INFO  ]          Bpp: 3
+           [ INFO  ]          Format: IND_RGB
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/dust/kof2k-teleportdust07.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 96 x 138
+           [ INFO  ]          Bpp: 3
+           [ INFO  ]          Format: IND_RGB
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/dust/kof2k-teleportdust08.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 96 x 138
+           [ INFO  ]          Bpp: 3
+           [ INFO  ]          Format: IND_RGB
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/dust/kof2k-teleportdust09.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 96 x 138
+           [ INFO  ]          Bpp: 3
+           [ INFO  ]          Format: IND_RGB
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/dust/kof2k-teleportdust10.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 96 x 138
+           [ INFO  ]          Bpp: 3
+           [ INFO  ]          Format: IND_RGB
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/dust/kof2k-teleportdust11.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 96 x 138
+           [ INFO  ]          Bpp: 3
+           [ INFO  ]          Format: IND_RGB
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]       -- Loading Image --
+                           {
+           [ INFO  ]          File name: ../../resources/animations/dust/kof2k-teleportdust12.png
+           [ INFO  ]          Extension: png
+           [ INFO  ]          Size: 96 x 138
+           [ INFO  ]          Bpp: 3
+           [ INFO  ]          Format: IND_RGB
+                           }
+[02:07:44] [  END  ]       Image loaded [Elapsed time = 0.001 seg]
+                        }
+[02:07:44] [  END  ]    Animation parsed and loaded [Elapsed time = 0.012 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/dust/kof2k-teleportdust01.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 96 x 138
+           [ INFO  ]       Block size: 128 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 32 x 118
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/dust/kof2k-teleportdust01.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/dust/kof2k-teleportdust02.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 96 x 138
+           [ INFO  ]       Block size: 128 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 32 x 118
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/dust/kof2k-teleportdust02.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/dust/kof2k-teleportdust03.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 96 x 138
+           [ INFO  ]       Block size: 128 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 32 x 118
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/dust/kof2k-teleportdust03.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/dust/kof2k-teleportdust04.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 96 x 138
+           [ INFO  ]       Block size: 128 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 32 x 118
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/dust/kof2k-teleportdust04.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/dust/kof2k-teleportdust05.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 96 x 138
+           [ INFO  ]       Block size: 128 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 32 x 118
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/dust/kof2k-teleportdust05.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/dust/kof2k-teleportdust06.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 96 x 138
+           [ INFO  ]       Block size: 128 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 32 x 118
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/dust/kof2k-teleportdust06.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/dust/kof2k-teleportdust06.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 96 x 138
+           [ INFO  ]       Block size: 128 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 32 x 118
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/dust/kof2k-teleportdust06.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/dust/kof2k-teleportdust07.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 96 x 138
+           [ INFO  ]       Block size: 128 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 32 x 118
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/dust/kof2k-teleportdust07.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/dust/kof2k-teleportdust08.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 96 x 138
+           [ INFO  ]       Block size: 128 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 32 x 118
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/dust/kof2k-teleportdust08.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/dust/kof2k-teleportdust09.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 96 x 138
+           [ INFO  ]       Block size: 128 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 32 x 118
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/dust/kof2k-teleportdust09.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/dust/kof2k-teleportdust10.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 96 x 138
+           [ INFO  ]       Block size: 128 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 32 x 118
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/dust/kof2k-teleportdust10.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/dust/kof2k-teleportdust11.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 96 x 138
+           [ INFO  ]       Block size: 128 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 32 x 118
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/dust/kof2k-teleportdust11.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Creating surface --
+                        {
+           [ INFO  ]       From image: ../../resources/animations/dust/kof2k-teleportdust12.png
+           [ INFO  ]       Type: IND_ALPHA
+           [ INFO  ]       Quality: IND_32
+           [ INFO  ]       Image size: 96 x 138
+           [ INFO  ]       Block size: 128 x 256
+           [ INFO  ]       Number of blocks: 1 x 1
+           [ INFO  ]       Spare (Right | Down): 32 x 118
+                        }
+[02:07:44] [  END  ]    Surface created [Elapsed time = 0.001 seg]
+[02:07:44] [ BEGIN ]    -- Freeing image --
+                        {
+           [ INFO  ]       File name: ../../resources/animations/dust/kof2k-teleportdust12.png
+                        }
+[02:07:44] [  END  ]    Ok [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Adding 2d entity --
+                        {
+           [ INFO  ]       Name: 0
+                        }
+[02:07:44] [  END  ]    2d entity added [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Adding 2d entity --
+                        {
+           [ INFO  ]       Name: 1
+                        }
+[02:07:44] [  END  ]    2d entity added [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Adding 2d entity --
+                        {
+           [ INFO  ]       Name: 2
+                        }
+[02:07:44] [  END  ]    2d entity added [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Adding 2d entity --
+                        {
+           [ INFO  ]       Name: 3
+                        }
+[02:07:44] [  END  ]    2d entity added [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Adding 2d entity --
+                        {
+           [ INFO  ]       Name: 4
+                        }
+[02:07:44] [  END  ]    2d entity added [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Adding 2d entity --
+                        {
+           [ INFO  ]       Name: 5
+                        }
+[02:07:44] [  END  ]    2d entity added [Elapsed time = 0 seg]
+[02:07:44] [ BEGIN ]    -- Adding 2d entity --
+                        {
+           [ INFO  ]       Name: 6
+                        }
+[02:07:44] [  END  ]    2d entity added [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]    -- Finalizing Entity2dManager --
+                        {
+[02:07:50] [ BEGIN ]       -- Freeing 2d entities --
+                           {
+           [ INFO  ]          Freeing 2d entity: 0
+           [ INFO  ]          Freeing 2d entity: 0
+           [ INFO  ]          Freeing 2d entity: 0
+           [ INFO  ]          Freeing 2d entity: 0
+           [ INFO  ]          Freeing 2d entity: 0
+           [ INFO  ]          Freeing 2d entity: 0
+           [ INFO  ]          Freeing 2d entity: 0
+                           }
+[02:07:50] [  END  ]       Entities freed [Elapsed time = 0 seg]
+                        }
+[02:07:50] [  END  ]    IND_Entity2dManager finalized [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]    -- Finalizing FontManager --
+                        {
+[02:07:50] [ BEGIN ]       -- Freeing fonts --
+                           {
+                           }
+[02:07:50] [  END  ]       Fonts freed [Elapsed time = 0 seg]
+                        }
+[02:07:50] [  END  ]    FontManager finalized [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]    -- Finalizing AnimationManager --
+                        {
+[02:07:50] [ BEGIN ]       -- Freeing animations --
+                           {
+[02:07:50] [ BEGIN ]          -- Freeing animation --
+                              {
+           [ INFO  ]             Name: ../../resources/animations/character1.xml
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0.001 seg]
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0 seg]
+                              }
+[02:07:50] [  END  ]          Ok [Elapsed time = 0.001 seg]
+[02:07:50] [ BEGIN ]          -- Freeing animation --
+                              {
+           [ INFO  ]             Name: ../../resources/animations/character2.xml
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0.001 seg]
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0 seg]
+                              }
+[02:07:50] [  END  ]          Ok [Elapsed time = 0.001 seg]
+[02:07:50] [ BEGIN ]          -- Freeing animation --
+                              {
+           [ INFO  ]             Name: ../../resources/animations/dust.xml
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]             -- Freeing surface --
+                                 {
+                                 }
+[02:07:50] [  END  ]             Ok [Elapsed time = 0 seg]
+                              }
+[02:07:50] [  END  ]          Ok [Elapsed time = 0.001 seg]
+                           }
+[02:07:50] [  END  ]       Animations freed [Elapsed time = 0.003 seg]
+                        }
+[02:07:50] [  END  ]    AnimationManager finalized [Elapsed time = 0.003 seg]
+[02:07:50] [ BEGIN ]    -- Finalizing SurfaceManager --
+                        {
+[02:07:50] [ BEGIN ]       -- Freeing surfaces --
+                           {
+           [ INFO  ]          Freeing surface:           [ INFO  ]          Freeing surface:                           }
+[02:07:50] [  END  ]       Surfaces freed [Elapsed time = 0.001 seg]
+                        }
+[02:07:50] [  END  ]    IND_SurfaceManager finalized [Elapsed time = 0.001 seg]
+[02:07:50] [ BEGIN ]    -- Finalizing ImageManager --
+                        {
+[02:07:50] [ BEGIN ]       -- Freeing images --
+                           {
+                           }
+[02:07:50] [  END  ]       Images freed [Elapsed time = 0 seg]
+                        }
+[02:07:50] [  END  ]    ImageManager finalized [Elapsed time = 0 seg]
+[02:07:50] [ BEGIN ]    -- Finalizing Direct3D --
+                        {
+           [  OK   ]       Finalizing the Device
+           [  OK   ]       Finalizing D3D object
+[02:07:50] [ BEGIN ]       -- Finalizing the window --
+                           {
+                           }
+[02:07:50] [  END  ]       Window finalized [Elapsed time = 0.042 seg]
+                        }
+[02:07:50] [  END  ]    Direct3D finalized  [Elapsed time = 0.053 seg]
